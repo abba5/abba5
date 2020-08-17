@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning everything 🤣
 - 💬 Ask me about nothing
-- 📫 How to reach me: a.email.to.abbas@gmail.com
+- 📫 How to reach me: an.email.to.abbas@gmail.com
 - 🥅 2020 Goals: Contribute more to Open Source projects and become Master in codeforces
 - ⚡ Fun fact: I am not Google. 
 
