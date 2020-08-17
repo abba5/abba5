@@ -14,7 +14,7 @@
 [<img align="left" alt="abba5 | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 [<img align="left" alt="abba5 | Codeforces" width="100px" src="https://sta.codeforces.com/s/26256/images/codeforces-vs-coronavirus-65.png" />][codeforces]
 [<img align="left" alt="abba5 | Codechef" width="50px" src="https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/cc-logo.svg" />][codechef]
-[<img align="left" style="background:#455a64" alt="abba5 | Leetcode" width="80px" src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/LeetCode_nav.4d940ca72.png" />][leetcode]
+[<img align="left" alt="abba5 | Leetcode" width="80px" src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo-dark.e99485d9b.svg" />][leetcode]
 
 <br />
 
