@@ -17,6 +17,12 @@
 [<img align="left" alt="abba5 | Leetcode" width="80px" src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo-dark.e99485d9b.svg" />][leetcode]
 
 <br />
+<br />
+
+### Spotify Playing 🎧
+[<img src="https://now-playing-codestackr.vercel.app/api/spotify-playing" alt="Abbas Spotify Playing" width="350" />](https://open.spotify.com/user/qxqkaqccnwaccqboqd5vcgtsx)
+
+<br />
 
 <br />
 
