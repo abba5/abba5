@@ -6,6 +6,7 @@
 - 📫 How to reach me: an.email.to.abbas@gmail.com
 - 🥅 2020 Goals: Contribute more to Open Source projects and become Master in codeforces
 - ⚡ Fun fact: I am not Google. 
+- 🐚 Shell: [oh-my-zsh]
 
 ### Connect with me:
 
@@ -40,3 +41,4 @@
 [codeforces]: https://codeforces.com/profile/abba5/
 [codechef]: https://www.codechef.com/users/abba5
 [leetcode]: https://leetcode.com/rangwala/
+[oh-my-zsh]: https://github.com/abba5/code/blob/master/extra/init_zsh.md
