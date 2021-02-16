@@ -1,11 +1,6 @@
 ### Hi there, I'm Abbas 👋
 [![Twitter Follow](https://img.shields.io/twitter/follow/abbas_noob?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2abba5&screen_name=abbas_noob)
 
-- 🌱 I’m currently learning everything 🤣
-- 💬 Ask me about nothing
-- 📫 How to reach me: an.email.to.abbas@gmail.com
-- 🥅 2020 Goals: Contribute more to Open Source projects and become Master in codeforces
-- ⚡ Fun fact: I am not Google. 
 - 🐚 Shell: [oh-my-zsh]
 
 ### Connect with me:
