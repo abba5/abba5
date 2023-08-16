@@ -1,9 +1,26 @@
-### Hi there, I'm Abbas 👋
-[![Twitter Follow](https://img.shields.io/twitter/follow/abbas_noob?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2abba5&screen_name=abbas_noob)
+```
+$ whoami
+abbas.rangwala
 
-- 🐚 Shell: [oh-my-zsh]
+$ finger abbas.rangwala
+Login: abbas.rangwala                   Name: abbas.rangwala
+Directory: /World/abbas.rangwala       	Shell: /bin/zsh
+On since Sun Mar 28 1999 06:05 (IST) on console (messages off)
+No Mail.
+No Plan.
+
+$ ls -la
+notes.txt
+
+$ cat notes.txt
+Wer ordnung hält, ist nur zu faul zum suchen
+-- German proverbs 
+
+```
 
 ### Connect with me:
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/abbas_noob?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2abba5&screen_name=abbas_noob)
 
 [<img align="left" alt="abba5 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="abba5 | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
