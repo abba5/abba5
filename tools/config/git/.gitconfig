@@ -1,0 +1,29 @@
+[http]
+	sslVerify = false
+[user]
+	name = abba5
+	email = abbas@scapia.cards
+    signingkey = 33C3F6BFF9035BCB
+[alias]
+	last = log -1 HEAD
+	push-origin = !git push origin $(git branch --show-current)
+	force-push = !git push --force-with-lease origin $(git branch --show-current)
+	removeWhiteSpace = !git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero
+	pull-origin = !git pull origin $(git branch --show-current)
+	add-in-last-commit = commit --amend --no-edit
+    co = checkout
+    cof = !git co $(git branch --column=plain | fzf)
+    clean-all = !git restore --staged . && git co . && git clean -fq
+	reset-branch = !git fetch --all && git reset --hard origin/$(git branch --show-current)
+[pull]
+	rebase = false
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[maintenance]
+	repo = /Users/abbas/scapia/offer-platform-service

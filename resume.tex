@@ -1,187 +1,267 @@
-\documentclass[a4paper,10pt]{article}
-%-----------------------------------------------------------
-\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
-\usepackage{graphicx}
-\usepackage{url}
-\usepackage{palatino}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
 \usepackage{tabularx}
-\fontfamily{SansSerif}
-\selectfont
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
 
-\usepackage[T1]{fontenc}
-\usepackage
-%[ansinew]
-[utf8]
-{inputenc}
 
-\usepackage{color}
-\definecolor{mygrey}{gray}{0.75}
-\textheight=9.75in
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
 \raggedbottom
-
+\raggedright
 \setlength{\tabcolsep}{0in}
-\newcommand{\isep}{-2 pt}
-\newcommand{\lsep}{-0.5cm}
-\newcommand{\psep}{-0.6cm}
-\renewcommand{\labelitemii}{$\circ$}
 
-\pagestyle{empty}
-%-----------------------------------------------------------
-%Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-\newcommand{\ressubheading}[3]{
-\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
-	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
-\end{tabular*}\vspace{-8pt}}
-%-----------------------------------------------------------
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
 
 \begin{document}
-\hspace{0.5cm}\\[-0.2cm]
 
-\textbf{\Large{Abbas Rangwala}} \\
-\indent Bhavnagar (Gujarat, INDIA) - 364001\\
-\indent email id : \textbf{abbastrick@gmail.com} \\
-\indent GitHub Profile : \textbf{github.com/abba5} \\
-\indent Linkedin Profile : \textbf{linkedin.com/in/abba5} \\
-\indent Mobile No.: \textbf{+91 7600475292} \\
-
-\resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
-\\
-% \begin{table}[ht!]
 \begin{center}
-\indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l }
-\hline
-\textbf{Examination} & \textbf{University} & \textbf{Year} & \textbf{CPI/\%} \\
-\hline
-%Post Graduate Specialization:\,\, & \textit{Computer Science and Engineering} \\
-%Post Graduation & IIT Bombay  & 2014 & 8.0 \\
-UnderGraduate Specialization: & \textit{Electronic \& Communication Engineering} \\
-Graduation & Dharmsinh Desai University, Nadiad  & 2016-2020  & 8.3\\
-Class XII (H.S.C.) & GSHSEB & 2016 & 81\% \\
-Class X (S.S.C.) & GSEB & 2014 & 84\% \\ 
-\hline
-\end{tabular}
+    {\Huge \scshape Abbas Rangwala} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ +91 7600475292 ~
+    \href{mailto:abbastrick@gmail.com}{\faEnvelope\ abbastrick@gmail.com} ~ 
+    \href{https://linkedin.com/in/abba5}{\faLinkedin\ abba5 }  ~
+    \href{https://github.com/abba5}{\faGithub\ abba5}
+    \href{https://twitter.com/abbas_noob}{\faTwitter\ abba5}
+    \vspace{-8pt}
 \end{center}
-% \end{table}
 
-\resheading{\textbf{ACHIEVEMENTS} }\\[\lsep]
-\begin{itemize}\itemsep \isep
-\item \noindent Selected for ICPC Regional 2019. (Team Name :- "Last\_Segment\_Tree", rank :- 313)
-\item \noindent  Finalist (137th) in CodeGladiator 2019
-\item \noindent Rated \textbf{5 Star} Coder on Codechef. (Codechef handle is:- "abba5")
-\item \noindent Specialist on Codeforces. (Codeforces handle is :- "abba5")
-\item \noindent  Qualified for Semi Finals in E-Yantra Robotics Competition 2017
-\end{itemize}
+% \section{Profile}
+%    Software engineer with backend development expertise, seeking a digital canvas to draw my design skills and craft impactful, scalable software arts.
+% \vspace{-10pt}
 
-\resheading{\textbf{INDUSTRY EXPERIENCE} }\\[\lsep]
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Scapia}{Aug 2023 -- present}
+      {Backend Software Engineer 2 (Travel Team)}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Implemented the \textbf{Offer Service}, optimizing the \textit{offer discovery, redemption,} and benefits process for \textbf{hotel, flight, and bus services}, enhancing the overall user experience and engagement on the platform.}
+        \resumeItem{
+        Engineered an in-house rule engine for efficient rule evaluation, processing requests with a batch size of more than \textbf{3k} in under \textbf{5 ms}, even for scenarios involving more than \textbf{10} offers and multiple rules.
+        }
+        \resumeItem{Implemented idempotency across all event listeners and redemption offer APIs for \textbf{travel services}, ensuring consistent behavior in case of \textit{retries}.}
+        \resumeItem{
+         Engineered a negative feedback job to actively manage the \textbf{click-through rate (CTR)} score of properties, leading to a \textbf{20\%} improvement in conversion rates.
+        }
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+      
 
-\begin{itemize}\itemsep \isep
+\resumeSubheading
+{Swiggy}{Feb 2021 -- Aug 2023}
+{Backend Software Engineer 1-2 (Foundation Team)}{Bengaluru, India}
+\resumeItemListStart
+\resumeItem {Created the \textbf{Media Platform Service}, ensuring smooth handling of Swiggy's media assets. This service securely stored assets in \textbf{AWS S3} and optimized delivery through a \textbf{CDN}.}
+\resumeItem{Developed and managed \textbf{session authentication services} for user validation across Swiggy's platform, serving \textbf{over 20 million} active users.}
+\resumeItem {As a part of the team, oversaw \textbf{layout, user authentication, restaurant rating, and stress control services}, actively monitoring and resolving issues, resulting in improved performance.}
+\resumeItem{Analyzed a GoLang service using pprof, identifying and fixing redundant unmarshalling processes. This optimization led to a remarkable \textbf{30\% reduction} in scaling requirements during peak traffic.}
 
-\item \noindent \textbf{Status} 1.5+ Years of experience.
+\resumeItem {Facilitated to a project aimed at optimizing the stress engine cache, reducing the size from \textbf{1TB} to \textbf{20GB}. This strategic optimization resulted in \textbf{60\% faster data retrieval} and in storage cost savings annually.}
 
-\item \noindent \textbf{Swiggy} (Backend Software Engineer) \\\emph{(Feb '21 - Current)} \\[-0.6cm]
-\begin{itemize}\itemsep \isep
-\item \noindent Working on user facing services which control all pages of Swiggy Food Application.
-\end{itemize}
+\resumeItemListEnd
 
-\item \noindent \textbf{Knowledge Foundry} (Backend Software Engineer) \\\emph{(May '20 - Feb '21)} \\[-0.6cm]
-\begin{itemize}\itemsep \isep
-\item \noindent Working on a Generic Product Life cycle Management software. Built for Food and Beverage industry, the system currently supports managing products right from their inception till market availability, comparison of products based on constituent ingredients and nutrients.
-\item \noindent Working on Spark SQL to analysing data.
-\item \noindent Technologies:  Node JS, Neo4j Graph Database, ElasticSearch, Spark, Hadoop
-\end{itemize}
-\item \noindent \textbf{Meditab Software (India) Pvt. Ltd.} (Software Engineer Intern) \\\emph{(Dec'19 - Apr'20)} \\[-0.6cm]
-\begin{itemize}\itemsep \isep
-\item \noindent Design scheduling software for Vial Automation (Drug Filling System), which will manage all component in Vial Automation.
-\item \noindent Technologies: CherryPy, Peewee. 
-\end{itemize}
-\end{itemize}
-
-\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
-\begin{itemize}\itemsep \isep
-\item \noindent Algorithms and Data Structures
-\item \noindent Operating System
-\item \noindent Mathematics
-\end{itemize}
-
-\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
-\begin{itemize}\itemsep \isep
-\item \noindent \textbf{Programming Languages: } C, C++, Scala, Java, Golang
-\item \noindent \textbf{Scripting Languages: } Python, Shell, JavaScript, TypeScript
-\item \noindent \textbf{Software Tools: } Git, \LaTeX, Octave, Scilab
-\item \noindent \textbf{Cloud Technologies: } AWS, Kubernetes
-\\
-\\
-\end{itemize}
-
-\resheading{\textbf{MAJOR PROJECTS } }\\[\lsep]
-\begin{itemize}
-
-\item \textbf{Glob-Poster} (Learning Advanced Web Technologies) \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item Objective : Basic social media page where people can post there thought.
-	\item Front-end logic was developed using React and designed using Next JS and Chakra UI 
-	\item Back-end logic was developed using Node.js  with MySQL as Database and graphQL as query language. Redis use to store the user session.
-	\end{itemize}
-
-
-\item \textbf{Ant Colony Optimization on TSP} (Project for learning purpose) \\
-\emph{(July'19 - Dec'19)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item Objective : Find Near-optimal solution for TSP using ant colony optimization.
-	\item Programming Language: C++
-	\end{itemize}
-
-\item \textbf{FPGA Based Crypto-System} (Project for learning AES and FPGA) \\
-\emph{(Jan'19 - April'19)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item Objective :Built a module which can be used in any application for encryption/ decryption of data.
-	\item AES-128 as symmetric key and RSA as asymmetric key. 
-	\item Altera DE1 FPGA Board for verification of code. 
-	\end{itemize}
-	
-\item \textbf{Spotter Snake
-} (Hardware project developed for E-Yantra Robotics Competition 2017
-) \\
- \emph{(Nov'17 - Feb'18)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item Objective: To make a robot similar to snake which can travel through different terrains.
-	\item Whole hardware structure was designed in Fusion 360 and modeled using V-REP and then 3D printed.
-	\item The movement of the snakes was controlled by Arduino Nano using a Wireless Remote and multiple servos.
-	\end{itemize}
-
-% \item \textbf{Variable Dual Voltage Power Supplier
-% } (Project for learning purpose) \\
-%  \emph{(Dec'17 - Feb'18)} \\[-0.6cm]
-% 	\begin{itemize}\itemsep \isep
-%     \item Objective : To give bias voltage to an Op-amp ($\pm$12 - 0 ).
-% 	\item Voltage Regulate part designed by discrete element.  
-% 	\end{itemize}
-	
-\end{itemize}
-
-
-\resheading{\textbf{EXTRACURRICULAR ACTIVITY} }\\[\lsep]
-\begin{itemize}\itemsep \isep
-    \item \textbf{Chairperson of IEEE, DDU Student Branch}\emph{ (Dec'18 - Dec'19)}
-    \item \textbf{Student Ambassador for IEEEXterem }\emph{(July'19 - Dec'19)}
-    \item \textbf{Problem setter at IEEE DDU SB Programming Competition} 
-    \emph{(23$^{rd}$ Jan 2019)}
+\resumeSubheading
+{Knowledge Foundry}{May 2020 -- Feb 2021}
+{Backend Software Engineer}{Bengaluru, India}
+\resumeItemListStart
+\resumeItem{Played a key role in developing a \textbf{Generic Product Life Cycle Management} software tailored for the food and beverage sector.}
+\resumeItem {Collaborated on crafting a comprehensive system enabling product management from conception to market readiness. This system facilitated easy comparison of products based on ingredients and nutritional content.}
     
-\end{itemize}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+% adjust vscape based on the space you want to leave between each section.
+%-----------Achievements-----------
+\section{Achievements}
+\resumeItemListStart[itemsep=-1pt]
+   \resumeItem{Received the MVP and \textbf{Swiggystar} awards for system improvement and cost-saving worth \textbf{120\%}, equating to \textbf{\$600 per week} in savings.}
+    \resumeItem{Selected for \textbf{ICPC Regional 2019} as part of "Last\_Segment\_Tree" team, ranking at \textbf{313th} place.}
+    \resumeItem{Reached the finals and ranked \textbf{137th in CodeGladiator 2019}.}
+    \resumeItem{Qualified for the Semi-finals in the \textbf{E-Yantra Robotics Competition 2017}.}
+    \resumeItem{Rated \textbf{EXPERT} badge on the popular \textbf{Codeforces} platform.}
+\resumeItemListEnd
+\vspace{-10pt}
+
+%-----------Technical Skilss-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Java, Golang(Go), C, C++, Shell scripting, Python} \\
+    \textbf{Frameworks} {: gRPC, Spring Boot, JPA, Mockito, Junit }\\
+     \textbf{Tools} {: Git, Docker, Kubernetes, Linux, CI/CD, Grafana, Snowflake}\\
+     \textbf{AWS services} {: S3, SQS, SNS, EC2, Cloudwatch, API Gateway, Serverless Lambda, Elasticache, DynamoDB, DAX, RDS, Cloudfront}
+    }}
+ \end{itemize}
+ \vspace{-13pt}
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \vspace{-6pt}
+%     \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%           {\textbf{Get-Generator} $|$ \hfill \href{https://github.com/abba5/get-generator}{github}}{}
+%           \resumeItemListStart
+%             \resumeItem{ In Golang, a pointer can cause a panic if it's not handled correctly. The aim is to generate getter methods for the structure fields, so that each field is accessed through the getters, and panics can be handled with default values }
+%           \resumeItemListEnd
+%           \vspace{-18pt}
+%     \resumeProjectHeading
+%           {\textbf{Nasa-Image-App} $|$ \hfill \href{https://nasa-app-images.netlify.app/}{demo link} $|$   \href{https://github.com/abba5/nasa-image-app}{github}}{}
+%           \resumeItemListStart
+%             \resumeItem{ Use \href{https://api.nasa.gov/}{NASA APIs} NASA APIs to fetch the "image of the day" and past images. Users can favorite the image as well as search for a specific date. }
+%             % \resumeItem{Implemented \textbf{PDF generation, data security, data visualization} and \textbf{email service}.}
+%           \resumeItemListEnd
+%           \vspace{-18pt}
+%     \resumeSubHeadingListEnd
+% \vspace{-10pt}
+
+% \section{Projects}
+% \vspace{-6pt}
+% \resumeSubHeadingListStart
+% \resumeProjectHeading
+%       {\textbf{Get-Generator} $|$ \hfill \href{https://github.com/abba5/get-generator}{github}}{}
+%       \resumeItemListStart
+%         \resumeItem{ In Golang, a pointer can cause a panic if not handled correctly. The aim is to generate getter methods for the structure fields so that each field is accessed through the getters, and panics can be handled with default values. }
+%       \resumeItemListEnd
+%       \vspace{-18pt}
+% \resumeProjectHeading
+%       {\textbf{Nasa-Image-App} $|$ \hfill \href{https://nasa-app-images.netlify.app/}{demo link} $|$   \href{https://github.com/abba5/nasa-image-app}{github}}{}
+%       \resumeItemListStart
+%         \resumeItem{ Utilized NASA APIs to fetch the "image of the day" and past images for the Nasa-Image-App. Users can favorite images and search for a specific date. }
+%         % \resumeItem{Implemented \textbf{PDF generation, data security, data visualization} and \textbf{email service}.}
+%       \resumeItemListEnd
+%       \vspace{-18pt}
+% \resumeSubHeadingListEnd
+% \vspace{-10pt}
 
 
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Get-Generator} \hfill \href{https://github.com/abba5/get-generator}{github}}{}
+          \resumeItemListStart
+           \vspace{5pt}
+            \resumeItem{ In Golang, a pointer can cause a panic if not handled correctly. The aim is to generate getter methods for the structure fields so that each field is accessed through the getters, and panics can be handled with default values.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+    \resumeProjectHeading
+          {\textbf{Nasa-Image-App} $|$ \hfill \href{https://nasa-app-images.netlify.app/}{demo link} $|$   \href{https://github.com/abba5/nasa-image-app}{github}}{}
+          \resumeItemListStart
+            \vspace{5pt}
+            \resumeItem{Utilized NASA APIs to fetch the "image of the day" and past images for the Nasa-Image-App. Users can favorite images and search for a specific date.}
+            % \resumeItem{Implemented \textbf{PDF generation, data security, data visualization} and \textbf{email service}.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+    \resumeSubHeadingListEnd
+\vspace{-3pt}
 
-\resheading{\textbf{INTEREST AND HOBBIES} }\\[\lsep]
-\begin{itemize}\itemsep \isep
-\item \noindent Gaining knowledge in irrespective domain.
-\item \noindent Volunteer Work.
-\item \noindent Gaming
-\end{itemize}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
 
-
-
-\indent I hereby acknowledge that the information provided above is correct and best of my knowledge.\\
+      %leave a line after this
+    \resumeSubheading
+      {Dharmsinh Desai University, Nadiad}{2016 -- 2020}
+      {Bachelor's Degree in Electronic \& Communication Engineering }{CPI: 8.3/10}
+  
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
 
 \end{document}

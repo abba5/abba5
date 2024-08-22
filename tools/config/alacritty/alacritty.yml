@@ -1,0 +1,18 @@
+window:
+  decorations: buttonless
+  startup_mode: Maximized
+  opacity: 1.0
+  padding:
+    x: 5
+    y: 5
+
+# Font configuration
+font:
+  # Point size
+  normal:
+    family: IntelOne Mono
+  size: 14
+  style: Regular
+  family: "Monoco"
+
+  # use_thin_strokes: true
