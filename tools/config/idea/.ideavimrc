@@ -1,0 +1,11 @@
+set nu
+set rnu
+
+set ignorecase
+set smartcase
+set scrolloff=10
+
+let mapleader=" "
+
+vnoremap <Leader>y "+y
+

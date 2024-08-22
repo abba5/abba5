@@ -1,0 +1,25 @@
+{
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "filetypes": [
+        "c",
+        "objc",
+        "h"
+      ]
+    },
+    "go": {
+      "command": "gopls",
+      "rootPatterns": [
+        "go.mod"
+      ],
+      "trace.server": "verbose",
+      "filetypes": [
+        "go"
+      ]
+    }
+  },
+  "java.enabled": false,
+  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok/lombok.jar",
+  "codeLens.enable": false
+}
